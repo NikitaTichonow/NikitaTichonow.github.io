@@ -1,0 +1,22 @@
+.sounds {
+    position: relative;
+    background-color: $color-blue;
+    padding: 1.1rem 0;
+    @include disp-flex;
+    justify-content: center;
+    column-gap: 3rem;
+    &__link::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    &__link {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

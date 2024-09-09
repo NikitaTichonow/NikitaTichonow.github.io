@@ -1,0 +1,20 @@
+.today {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5.7rem;
+    padding: 2rem 0;
+    height: 72.8rem;
+    background: url(/img/image9.png) center / cover no-repeat;
+    &__title {
+        font-size: 5.4rem;
+        font-weight: 400;
+    }
+    &__link {
+        display: inline-block;
+        padding: 0.8rem 2rem;
+        background-color: $color-blue;
+        border-radius: 0.8rem;
+    }
+}

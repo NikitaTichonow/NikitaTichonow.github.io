@@ -1,0 +1,30 @@
+.always {
+  color: $color-black;
+  padding: 10rem 0;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(36.1rem, min-content));
+    grid-gap: 1rem;
+    justify-content: center;
+  }
+  &__card {
+    padding: 3.2rem;
+    background-color: #f8f8f8;
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    align-items: center;
+    
+  }
+  &__descr {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  &__title--h4 {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $color-grey;
+    align-self: flex-start;
+  }
+}

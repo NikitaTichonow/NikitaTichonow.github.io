@@ -1,0 +1,49 @@
+@media (width < 686px) {
+  .header {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 2rem;
+    height: auto;
+  }
+  .sounds {
+    padding: 1rem;
+    &__content {
+      display: none;
+    }
+  }
+  .producer {
+    padding: 1.5rem;
+    min-height: 40rem;
+    &__title {
+      width: 100%;
+    }
+    &__descr {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (width < 575px) {
+  .nav {
+    &__items {
+      display: none;
+    }
+    &__burger {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.7rem;
+      cursor: pointer;
+    }
+  }
+  .always {
+    &__cards {
+       grid-template-columns: repeat(auto-fit, minmax(36.1rem, 1fr));
+    }
+  }
+  .today {
+    height: 44.4rem;
+    &__title {
+      font-size: 4rem;
+    }
+  }
+}

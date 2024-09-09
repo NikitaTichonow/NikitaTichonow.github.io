@@ -1,0 +1,40 @@
+.footer {
+    padding: 5rem 0;
+    &__nav {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 3rem;
+        flex-wrap: wrap;
+        margin-bottom: 8rem;
+    }
+    &__block--link {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1.1rem;
+    }
+    &__link {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: $color-grey;
+    }
+    &__link_1 {
+        font-size: 2rem;
+        color: $color-white;
+        line-height: 2.4rem;
+    }
+    &__link--bt {
+        margin-bottom: 2.4rem;
+    }
+    &__nav--links {
+        display: flex;
+        align-items: center;
+        gap: 2.4rem;
+        flex-wrap: wrap;
+        
+    }
+    &__link--about {
+        font-size: 1.2rem;
+        color: $color-grey;
+    }
+}
