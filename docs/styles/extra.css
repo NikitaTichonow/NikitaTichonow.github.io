@@ -1,0 +1,72 @@
+/* Красивый фон для всего сайта */
+.md-main {
+    background: linear-gradient(135deg, 
+        #667eea 0%, 
+        #764ba2 25%, 
+        #f093fb 50%, 
+        #f5576c 75%, 
+        #6a11cb 100%);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    min-height: 100vh;
+}
+
+/* Анимация фона */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Затемнение контента для лучшей читаемости */
+.md-content {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+}
+
+/* Для темной темы */
+[data-md-color-scheme="slate"] .md-content {
+    background: rgba(30, 30, 40, 0.95);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для формы */
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #d9d9d9, -20px -20px 60px #ffffff;
+}
+
+[data-md-color-scheme="slate"] .contact-form {
+    background: linear-gradient(145deg, #1e1e2e, #2a2a3e);
+    box-shadow: 20px 20px 60px #0f0f1a, -20px -20px 60px #2d2d42;
+}
+
+/* Стили для кнопок */
+.md-button {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.md-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+/* Стили для карточек */
+.md-typeset .admonition {
+    border-radius: 15px;
+    border-left-width: 5px;
+    margin: 20px 0;
+}

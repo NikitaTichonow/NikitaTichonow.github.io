@@ -1,65 +1,87 @@
 # Основные метаданные сайта
 site_name: Мой Блог
-# site_url: https://musecollaboration.github.io/mkdocs-demo/
-site_url: https://github.com/NikitaTichonow.github.io/mkdocs-demo.git
+site_url: https://nikitatichonow.github.io/mkdocs-demo/
 site_author: Nikita Tichonow
 
-# Copyright в футере (только твой текст, без лишнего)
+# Copyright в футере
 copyright: © 2026 Nikita Tichonow
 
 # Тема оформления
 theme:
   name: material
   language: ru
+  custom_dir: docs/overrides
 
-  # Цветовая палитра — тёмная тема по умолчанию + переключатель на светлую
+  # Цветовая палитра
   palette:
-    # Тёмная (slate) — основная / по умолчанию
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: indigo
+      primary: deep purple
       accent: amber
       toggle:
-        icon: material/brightness-7 # Солнышко — переключить на светлую
+        icon: material/brightness-7
         name: Переключиться на светлую тему
 
-    # Светлая — только как запасная опция
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: indigo
+      primary: deep purple
       accent: amber
       toggle:
-        icon: material/brightness-4 # Луна — переключить на тёмную
+        icon: material/brightness-4
         name: Переключиться на тёмную тему
 
-  # Полезные функции темы
-  # features:
-  #   - navigation.sections
-  #   - navigation.tracking
-  #   - navigation.footer
-  #   - toc.integrate
-  #   - content.code.copy
-  #   - content.code.annotate
-  #   - search.suggest
-  #   - search.highlight
+  # Фон и дополнительные стили
+  features:
+    - navigation.sections
+    - navigation.tabs
+    - navigation.expand
+    - navigation.indexes
+    - toc.integrate
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
 
-# Ключевой блок: полностью убирает "Made with Material for MkDocs"
+  # Фон сайта (градиент/изображение)
+  # Опционально: можно добавить фоновое изображение
+
+# Кастомизация
 extra:
-  generator: false # ← это удаляет надпись навсегда
+  generator: false
+  # Социальные иконки
+  social:
+    - icon: fontawesome/brands/envelope
+      link: "mailto:nik7674@yandex.ru"
+      name: Email
+    - icon: fontawesome/brands/github
+      link: https://github.com/NikitaTichonow
+      name: GitHub
+    - icon: fontawesome/brands/telegram
+      link: https://t.me/
+      name: Telegram
+    - icon: fontawesome/brands/vk
+      link: https://vk.com/
+      name: VK
 
-  # Социальные иконки в футере справа (настрой свои ссылки)
-  
-
-# Репозиторий + кнопка "Редактировать"
-repo_url: https://github.com/NikitaTichonow/mkdocs-demo.git
-repo_name: NikitaTichonow/mkdocs-demo
+# Репозиторий
+repo_url: https://github.com/NikitaTichonow/mkdocs-demo
+repo_name: GitHub
 edit_uri: edit/main/docs/
-
-# Следить за изменениями
-watch:
-  - docs
 
 # Навигация
 nav:
   - Главная: index.md
-  - Обо Мне: about.md
+  - Обо мне: about.md
+  - Обратная связь: feedback.md
+
+# Плагины
+plugins:
+  - search
+  - minify:
+      minify_html: true
+  - git-commit
+  - git-committers
+
+# Дополнительные CSS стили
+extra_css:
+  - styles/extra.css
