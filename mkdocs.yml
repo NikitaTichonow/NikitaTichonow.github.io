@@ -1,11 +1,11 @@
 # Основные метаданные сайта
 site_name: Мой Блог
 # site_url: https://musecollaboration.github.io/mkdocs-demo/
-site_url: https://ВАШ_ГИТХАБ.github.io/НАЗВАНИЕ_РЕПОЗИТОРИЯ/
-site_author: Ваше имя
+site_url: git@github.com:NikitaTichonow/mkdocs-demo.git
+site_author: Nikita Tichonow
 
 # Copyright в футере (только твой текст, без лишнего)
-copyright: © 2026 Александр Терехов
+copyright: © 2026 Nikita Tichonow
 
 # Тема оформления
 theme:
@@ -50,13 +50,13 @@ extra:
   # Социальные иконки в футере справа (настрой свои ссылки)
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/musecollaboration
+      link: 
     - icon: fontawesome/brands/telegram
-      link: https://t.me/твой_канал # ← замени на реальный
+      link:  # ← замени на реальный
 
 # Репозиторий + кнопка "Редактировать"
-repo_url: https://github.com/musecollaboration/mkdocs-demo
-repo_name: musecollaboration/mkdocs-demo
+repo_url: git@github.com:NikitaTichonow/mkdocs-demo.git
+repo_name: NikitaTichonow/mkdocs-demo
 edit_uri: edit/main/docs/
 
 # Следить за изменениями
