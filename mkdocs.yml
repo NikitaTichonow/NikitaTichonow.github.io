@@ -1,7 +1,7 @@
 # Основные метаданные сайта
 site_name: Мой Блог
 # site_url: https://musecollaboration.github.io/mkdocs-demo/
-site_url: git@github.com:NikitaTichonow/mkdocs-demo.git
+site_url: https://github.com/NikitaTichonow/mkdocs-demo.git
 site_author: Nikita Tichonow
 
 # Copyright в футере (только твой текст, без лишнего)
@@ -48,14 +48,10 @@ extra:
   generator: false # ← это удаляет надпись навсегда
 
   # Социальные иконки в футере справа (настрой свои ссылки)
-  social:
-    - icon: fontawesome/brands/github
-      link: 
-    - icon: fontawesome/brands/telegram
-      link:  # ← замени на реальный
+  
 
 # Репозиторий + кнопка "Редактировать"
-repo_url: git@github.com:NikitaTichonow/mkdocs-demo.git
+repo_url: https://github.com/NikitaTichonow/mkdocs-demo.git
 repo_name: NikitaTichonow/mkdocs-demo
 edit_uri: edit/main/docs/
 
