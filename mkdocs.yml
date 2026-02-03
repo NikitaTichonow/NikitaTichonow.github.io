@@ -51,7 +51,7 @@ extra:
   
 
 # Репозиторий + кнопка "Редактировать"
-repo_url: https://github.com/NikitaTichonow/mkdocs-demo.git
+repo_url: https://github.com/NikitaTichonow.github.io/mkdocs-demo.git
 repo_name: NikitaTichonow/mkdocs-demo
 edit_uri: edit/main/docs/
 
